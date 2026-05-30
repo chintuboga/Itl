@@ -33,7 +33,7 @@ document.getElementById("status").innerText =
 "Vesting Rewards";
 }
 
-let totalCoins = itlg * ratio;
+let totalCoins = itlg / ratio;
 let monthlyCoins = vest > 0 ? totalCoins / vest : totalCoins;
 
 document.getElementById("total").innerText =
