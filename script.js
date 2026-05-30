@@ -23,8 +23,8 @@ function calculate() {
     const monthlyCoins = months == 0 ? totalCoins : totalCoins / months;
 
     document.getElementById("ratio").textContent = ratio;
-    document.getElementById("monthly").textContent = monthlyCoins.toFixed(5);
-    document.getElementById("total").textContent = totalCoins.toFixed(5);
+    document.getElementById("monthly").textContent = monthlyCoins.toFixed(2);
+    document.getElementById("total").textContent = totalCoins.toFixed(2);
 
     document.getElementById("result").style.display = "block";
 }
