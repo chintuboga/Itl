@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ITLG : ITL Ratio Calculator</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ITLG → ITL Calculator</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
-    <h2>ITLG to ITL Ratio Calculator</h2>
 
-    <div class="input-group">
-        <label>Available ITLG</label>
-        <input type="number" id="coins" placeholder="Enter Available ITLG Coins">
+    <div class="logo-section">
+        <img src="interlink-logo.png" alt="InterLink Logo">
+        <h1>ITLG : ITL Coins Calculator</h1>
     </div>
 
-    <div class="input-group">
+    <div class="card">
+
+        <label>Available ITLG Coins</label>
+        <input type="number" id="itlg" placeholder="Enter ITLG Coins">
+
         <label>Locking Years</label>
-        <select id="year">
+        <select id="locking">
             <option value="0">0 Year</option>
             <option value="1">1 Year</option>
             <option value="2">2 Years</option>
@@ -26,11 +29,9 @@
             <option value="4">4 Years</option>
             <option value="5">5 Years</option>
         </select>
-    </div>
 
-    <div class="input-group">
         <label>Vesting Months</label>
-        <select id="months">
+        <select id="vesting">
             <option value="0">0</option>
             <option value="12">12</option>
             <option value="24">24</option>
@@ -43,15 +44,19 @@
             <option value="108">108</option>
             <option value="120">120</option>
         </select>
+
+        <button onclick="calculate()">Calculate</button>
+
+        <div class="result">
+            <h3 id="status"></h3>
+
+            <p><strong>Ratio:</strong> <span id="ratio">-</span></p>
+            <p><strong>Total ITL Coins:</strong> <span id="total">-</span></p>
+            <p><strong>Monthly ITL Coins:</strong> <span id="monthly">-</span></p>
+        </div>
+
     </div>
 
-    <button onclick="calculate()">Calculate Now</button>
-
-    <div class="result" id="result">
-        <p>You will get <strong>Ratio:</strong> 1 : <span id="ratio"></span></p>
-        <p>You will get <strong>Monthly ITL Coins:</strong> <span id="monthly"></span></p>
-        <p>You will get <strong>Total ITL Coins:</strong> <span id="total"></span></p>
-    </div>
 </div>
 
 <script src="script.js"></script>
