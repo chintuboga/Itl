@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ITLG Ratio Calculator</title>
+    <title>ITLG : ITL Ratio Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
-    <h2>ITLG Ratio Calculator</h2>
+    <h2>ITLG to ITL Ratio Calculator</h2>
 
     <div class="input-group">
-        <label>Available Coins</label>
+        <label>Available ITLG Coins</label>
         <input type="number" id="coins" placeholder="Enter Coins">
     </div>
 
     <div class="input-group">
-        <label>Lock Years</label>
+        <label>Locking Years</label>
         <select id="year">
             <option value="0">0 Year</option>
             <option value="1">1 Year</option>
@@ -29,7 +29,7 @@
     </div>
 
     <div class="input-group">
-        <label>Vest Months</label>
+        <label>Vesting Months</label>
         <select id="months">
             <option value="0">0</option>
             <option value="12">12</option>
@@ -45,12 +45,12 @@
         </select>
     </div>
 
-    <button onclick="calculate()">Calculate</button>
+    <button onclick="calculate()">Calculate Now</button>
 
     <div class="result" id="result">
         <p><strong>Ratio:</strong> 1 : <span id="ratio"></span></p>
-        <p><strong>Monthly Coins:</strong> <span id="monthly"></span></p>
-        <p><strong>Total Coins:</strong> <span id="total"></span></p>
+        <p><strong>Monthly ITL:</strong> <span id="monthly"></span></p>
+        <p><strong>Total ITL:</strong> <span id="total"></span></p>
     </div>
 </div>
 
